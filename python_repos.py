@@ -30,7 +30,7 @@ names, plot_dicts = [],[]
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
 
-    #Get the project description, if one is available.
+    #Getting project description
     description = repo_dict['description']
     if not description:
         description = 'NO Description Provided.'
@@ -44,7 +44,7 @@ for repo_dict in repo_dicts:
     plot_dicts.append(plot_dict)
 
 
-#Make Visualization
+#Making Visualization
 my_style = LS('#333366', base_style=LCS)
 my_style.title_font_size = 24
 my_style.label_font_size = 14
